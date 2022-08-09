@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="btn-box">
+            <button class="js-card-btn card-btn">Give me a card</button>
+            <button disabled class="js-reset-btn card-btn">Give me a new deck</button>
+        </div>
+        <div class="js-random-card card-box"></div>
+
+        <div class="table">
+            <div class="js-cardBack"><img class="cardImg" src="./deckImgs/Card_back_06.svg" alt=""></div>
+            <div>
+                <div class="js-card-img"></div>
+            </div>
+
+        </div>
+        <div class="js-yourdeck decks-on-table"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

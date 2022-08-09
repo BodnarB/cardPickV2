@@ -1,0 +1,86 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 1rem;
+    background-color: rgb(253, 253, 253);
+    letter-spacing: 1px;
+}
+
+.card-btn {
+    padding: 0.7rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: rgb(68, 55, 39);
+    color: whitesmoke;
+    margin: 1rem;
+    border-radius: 0.3rem;
+}
+
+.btn-box {
+    display: flex;
+}
+
+.card-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.card-btn:active {
+    background-color: rgb(133, 26, 26);
+}
+
+.card-btn:disabled {
+    background-color: rgb(168, 168, 168);
+    cursor: default;
+}
+
+.card-box {
+    text-align: center;
+    margin: 1rem;
+}
+
+.your-card {
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+.card-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.card-name::first-letter {
+    text-transform: uppercase;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem auto;
+}
+
+.table {
+    display: flex;
+}
+
+.cardImg {
+    height: 310px;
+    margin: 1rem;
+}
+
+.playersCard-img {
+    height: 140px;
+    margin: 0.5rem -1.2rem;
+}
+
+.decks-on-table {
+    display: flex;
+    width: 850px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem;
+    max-width: 90%;
+}
