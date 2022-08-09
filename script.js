@@ -48,6 +48,7 @@ function checkCards() {
     else if (deck.length === 0) {
         alert("Out of cards!");
         cardBtn.disabled = true;
+
     }
     else if (deck.length > 0) {
         cardBtn.disabled = false
@@ -65,6 +66,7 @@ function resetBtnDisable() {
 
 function reset() {
     createDeck()
+    checkCards()
     randomCardHtml.innerHTML = `<p>Remaining cards: ${deck.length}</p>`
     playersDeck.innerHTML = ` `
     cardImg.innerHTML = ` `
@@ -73,11 +75,7 @@ function reset() {
 }
 
 function showPlayersHand() {
-    for (card of playersHand) {
-        console.log(card.suit)
-        console.log(card.value)
-
-    }
+    for (card of playersHand) { }
     playersDeck.innerHTML += `<img class="playersCard-img" src="./deckImgs/English_pattern_${card.value}_of_${card.suit}.svg" alt="">`
 }
 
