@@ -48,7 +48,7 @@ function checkCards() {
     else if (deck.length === 0) {
         alert("Out of cards!");
         cardBtn.disabled = true;
-
+        cardImg.innerHTML = ` `
     }
     else if (deck.length > 0) {
         cardBtn.disabled = false
