@@ -3,19 +3,26 @@ html {
 }
 
 body {
-    margin: 1rem;
-    background-color: rgb(253, 253, 253);
+    color: white;
+    padding: 1rem;
+    background-color: rgb(27, 114, 5);
+    background-image: linear-gradient(180deg, #1b72051f 0%, rgb(0 0 0 / 81%) 100%),url(./deckImgs/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     letter-spacing: 1px;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 .card-btn {
     padding: 0.7rem 1rem;
     font-size: 1.2rem;
     font-weight: 500;
-    background-color: rgb(68, 55, 39);
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     margin: 1rem;
     border-radius: 0.3rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.281);
 }
 
 .btn-box {
@@ -23,17 +30,25 @@ body {
 }
 
 .card-btn:hover {
-    background-color: black;
+    background-color: rgb(226, 240, 226);
     cursor: pointer;
+    transition-duration: 0.2s;
+    transform: scale(1.07);
 }
 
 .card-btn:active {
-    background-color: rgb(133, 26, 26);
+    background-color: rgb(215, 255, 163);
 }
 
 .card-btn:disabled {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(129, 129, 129);
+    color: rgb(214, 214, 214);
     cursor: default;
+    box-shadow: none;
+}
+
+.card-btn:disabled:hover {
+    transform:none
 }
 
 .card-box {
@@ -64,17 +79,19 @@ body {
 
 .table {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cardImg {
-    height: 310px;
+    height: 250px;
     margin: 1rem;
 }
 
 .playersCard-img {
     height: 130px;
     margin: 0.5rem -1.4rem;
-    filter: drop-shadow(6px 6px 5px rgb(163, 163, 163));
+    filter: drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.671));
 }
 
 .decks-on-table {
